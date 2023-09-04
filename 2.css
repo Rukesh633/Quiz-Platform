@@ -1,0 +1,136 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url("https://i.imgur.com/n2TWSkc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #quiz-container {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: large;
+    padding: 20px;
+    background-color: palegoldenrod;
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadein 1s;
+  }
+  
+  #question {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 80%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   }
+  
+  button {
+    margin-top: 20px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0d8bf2;
+  }
+  
+  input[type="radio"]:checked + span {
+    font-weight: bold;
+  }
+  
+  #score {
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: fadein 1s;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    #quiz-container {
+      max-width: 90%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
